@@ -166,6 +166,7 @@ namespace Delly.Terminal
         // 更新进程信息集合
         private static void UpdateProcessInfos()
         {
+            if (!RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) { return; }
             // 获取所有父线程信息
             using (var runner = new Runner("wmic", $"process get parentprocessid,processid"))
             {
