@@ -1,20 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
+		<Version>2026.5.2</Version>
 		<TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
 		<PackageIcon>terminal_128.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageId>Delly.Terminal</PackageId>
+		<Authors>Delly.Net</Authors>
+		<Description>Delly.Terminal is a flexible terminal component library that provides functions such as external process execution, real-time output monitoring, and process tree management.</Description>
+		<PackageTags>terminal, process, csharp, command, stdout, stderr</PackageTags>
+		<RepositoryUrl>https://github.com/delly-net/Terminal</RepositoryUrl>
+		<LicenseExpression>MIT</LicenseExpression>
+		<ProjectUrl>https://github.com/delly-net/Terminal</ProjectUrl>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Include="..\Documents\Logo\terminal_128.png">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
-	  <None Include="..\README.md">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
+		<None Include="..\Documents\Logo\terminal_128.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 
 </Project>
